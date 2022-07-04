@@ -10,7 +10,7 @@ export default function Repositories() {
   const searchInput = useRef(null);
 
   const { data, error } = Swr(
-    "https://api.github.com/users/SherlockYigit/repos",
+    "https://api.github.com/users/Tolga1452/repos",
     (url) => fetch(url).then((res) => res.json())
   );
   const isLoading = !data && !error;
@@ -76,7 +76,7 @@ export default function Repositories() {
             {isLoaded &&
               data
                 .filter(
-                  (repo) => !repo.fork && !["SherlockYigit"].includes(repo.name)
+                  (repo) => !repo.fork && !["Tolga1452"].includes(repo.name)
                 )
                 .map((repo, i) => <RepoCard key={i} {...repo} />)}
             {isLoading &&

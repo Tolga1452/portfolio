@@ -2,14 +2,14 @@ export default {
   heroProfilePic: "github", // static, discord
   hostName: "website-yigitsh.vercel.app",
   siteName: {
-    first: "yigit",
-    second: "sh",
+    first: "Tolgchu",
+    second: "✨",
   },
   personal: {
-    name: "Yiğit",
-    position: "Full-stack Developer",
+    name: "Tolga",
+    position: "Programmer",
     description:
-      "Hello 👋, I'm a student. I'm {age} years old now and I have some small projects. I spend more time from classes on my projects and cycling.",
+      "there is nothing lol",
     birthday: {
       day: process.env.BIRTHDAY,
       month: process.env.BIRTHMONTH,
@@ -19,26 +19,44 @@ export default {
     },
     socialAccounts: [
       {
-        color: "#7289da",
+        color: "#5865F2",
         textColor: "#ffffff",
         name: "Discord",
-        accountId: "304347029046558721",
-        url: "https://discord.com/channels/@me/304347029046558721",
+        accountId: "329671025312923648",
+        url: "discord://-/users/329671025312923648",
       },
       {
         color: "#24292e",
         textColor: "#ffffff",
         name: "Github",
-        url: "https://github.com/SherlockYigit",
+        url: "https://github.com/Tolga1452",
       },
       {
-        color: "#000000",
+        color: "#FF0000",
         textColor: "#FFFFFF",
-        name: "Steam",
-        url: "https://steamcommunity.com/id/yigitsh/",
+        name: "YouTube",
+        url: "https://www.youtube.com/channel/UCnG9fe6RdQSIvO98475CNOw",
+      },
+      {
+        color: "#1DA1F2",
+        textColor: "#FFFFFF",
+        name: "Twitter",
+        url: "https://twitter.com/Tolgchu",
+      },
+      {
+        color: "#FF5700",
+        textColor: "#FFFFFF",
+        name: "Reddit",
+        url: "https://www.reddit.com/user/Tolgchu",
+      },
+      {
+        color: "#1DB954",
+        textColor: "#FFFFFF",
+        name: "Spotify",
+        url: "https://open.spotify.com/user/397g6w3fvaxxbb4ee124jun7t?si=1255dd3b42224788",
       },
     ],
-    usedLanguages: ["Javascript", "Typescript", "Python", "Rust", "Go", "C"],
+    usedLanguages: ["Javascript", "Python", "C#"],
   },
   routes: [
     {
@@ -58,19 +76,15 @@ export default {
       description:
         "On this page you can search and reach the projects I have developed open source in Github.",
       to: "/repositories",
-    },
-    {
-      name: "Blog",
-      description: "You can see the posts I have published on this page.",
-      to: "/blog",
-    },
+    }
   ],
   projects: [
     {
-      name: "yigitsh API",
-      description: "A simple and functional API service.",
-      to: "https://yigitsh-api.herokuapp.com/",
-    },
+      type: 'website',
+      name: "discord.js v13 to v14 Converter",
+      description: "A simple v13 to v14 code converter for discord.js.",
+      to: "https://djs-v13-to-v14-converter.vercel.app/",
+    }
   ],
   metaTags: {
     themeColor: "#0c011e",

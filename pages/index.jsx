@@ -78,7 +78,7 @@ export default () => {
           )}
         </div>
         <div className="flex justify-center space-x-2">
-          <div className="flex inline-flex flex-col space-y-2">
+          <div className="flex inline-flex flex-col space-y-2" style={{ transform: 'translateX(-570px)' }}>
             {Config.personal.socialAccounts.map((account, index) => {
               return <SocialAccountButton {...{ ...account }} key={index} />;
             })}
@@ -102,6 +102,7 @@ export default () => {
           </div>
         </div>
       </div>
+      <p style={{transform: "translate3d(300px, 200px, 0px)"}}>This website from <a style={{color: '#5865F2'}} target="_blank" href="https://github.com/SherlockYigit/website">this repository</a>.</p>
     </Layout>
   );
 };

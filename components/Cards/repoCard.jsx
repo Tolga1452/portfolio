@@ -42,7 +42,7 @@ export default ({
   }
 
   return (
-    <a href={html_url} className="flex flex-wrap">
+    <a target="_blank" href={html_url} className="flex flex-wrap">
       <motion.div
         className="bg-blue-gray-200 dark:bg-blue-gray-800 w-full cursor-pointer shaodow-xl p-4 rounded-lg space-y-2"
         variants={{
