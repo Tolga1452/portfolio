@@ -10,7 +10,11 @@ export default function Repositories() {
   const searchInput = useRef(null);
 
   const { data, error } = Swr(
+<<<<<<< HEAD
     "https://api.github.com/users/Tolga1452/repos",
+=======
+    "https://api.github.com/users/yigit433/repos",
+>>>>>>> 929cbcea4d8f04d3bff5575944c09314ef2736c4
     (url) => fetch(url).then((res) => res.json())
   );
   const isLoading = !data && !error;

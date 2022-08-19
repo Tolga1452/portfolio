@@ -29,7 +29,11 @@ export default {
         color: "#24292e",
         textColor: "#ffffff",
         name: "Github",
+<<<<<<< HEAD
         url: "https://github.com/Tolga1452",
+=======
+        url: "https://github.com/yigit433",
+>>>>>>> 929cbcea4d8f04d3bff5575944c09314ef2736c4
       },
       {
         color: "#FF0000",
