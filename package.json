@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write --check './**/*.{js,ts,tsx,jsx,css}'"
+    "format": "prettier --write --check './**/*.{js,ts,tsx,jsx,css}'",
+    "commit": "cz"
   },
   "repository": {
     "type": "git",
