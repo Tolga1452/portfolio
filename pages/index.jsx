@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { FaDiscord } from "react-icons/fa";
 
 import SocialAccountButton from "../components/socialAccountButton";
 import DcUserActivity from "../components/dcUserActivity";
@@ -60,15 +61,14 @@ export default () => {
               url={`https://open.spotify.com/track/${discordUser.spotify.track_id}`}
             />
           ) : discordUser?.activities?.some(
-              (activity) => activity.name === "Youtube"
-            ) ? (
+            (activity) => activity.name === "Youtube"
+          ) ? (
             <DcUserActivity
               service="youtube"
-              content={`${
-                discordUser.activities.find(
-                  (activity) => activity.name === "Youtube"
-                ).details
-              }`}
+              content={`${discordUser.activities.find(
+                (activity) => activity.name === "Youtube"
+              ).details
+                }`}
             />
           ) : (
             <DcUserActivity
@@ -87,22 +87,34 @@ export default () => {
             <div>
               <div
                 id="status"
-                className={`p-3 ${
-                  statusColor(discordUser?.discord_status)?.ping
-                } animate-ping absolute bottom-0 right-0 rounded-md`}
+                className={`p-3 ${statusColor(discordUser?.discord_status)?.ping
+                  } animate-ping absolute bottom-0 right-0 rounded-md`}
               />
               <div
                 id="status"
-                className={`p-3 ${
-                  statusColor(discordUser?.discord_status)?.main
-                } absolute bottom-0 right-0 rounded-md`}
+                className={`p-3 ${statusColor(discordUser?.discord_status)?.main
+                  } absolute bottom-0 right-0 rounded-md`}
               />
               <ImageCard {...{ discordUser }} />
             </div>
           </div>
         </div>
       </div>
-      <p style={{transform: "translate3d(300px, 200px, 0px)"}}>This website from <a style={{color: '#5865F2'}} target="_blank" href="https://github.com/SherlockYigit/website">this repository</a>.</p>
+      <a
+      target="_blank"
+      href="https://discord.com/invite/JKUzkAdSCA"
+      className="focus:outline-none flex justify-center rounded-md p-2"
+      style={{
+        color: "#FFFFFF",
+        backgroundColor: "#5865F2",
+        width: "160px"
+      }}
+    >
+      <FaDiscord className="w-6 h-6" style={{
+        paddingRight: "5px"
+      }} /> Tolgchu Studios
+    </a>
+      <p style={{ transform: "translate3d(300px, 200px, 0px)" }}>This website from <a style={{ color: '#5865F2' }} target="_blank" href="https://github.com/SherlockYigit/website">this repository</a>.</p>
     </Layout>
   );
 };

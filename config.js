@@ -1,6 +1,6 @@
 export default {
   heroProfilePic: "github", // static, discord
-  hostName: "website-yigitsh.vercel.app",
+  hostName: "tolgchu.vercel.app",
   siteName: {
     first: "Tolgchu",
     second: "✨",
