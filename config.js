@@ -80,6 +80,18 @@ export default {
   ],
   projects: [
     {
+      type: 'package',
+      name: "color-converter.js",
+      description: "A simple color convert tool for Node.js",
+      to: "https://www.npmjs.com/package/@tolga1452/color-converter.js",
+    },
+    {
+      type: 'repository',
+      name: "discord.js v14 Template",
+      description: "An advanced Discord bot template for discord.js package",
+      to: "https://github.com/Tolga1452/discord.js-v14-template",
+    },
+    {
       type: 'website',
       name: "discord.js v13 to v14 Converter",
       description: "A simple v13 to v14 code converter for discord.js.",

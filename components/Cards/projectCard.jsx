@@ -1,6 +1,7 @@
 import { IoIosApps } from "react-icons/io";
-import { BiBot } from "react-icons/bi";
+import { BiBot, BiPackage } from "react-icons/bi";
 import { BsWindowSidebar } from "react-icons/bs";
+import { FcFolder } from "react-icons/fc";
 import { motion } from "framer-motion";
 
 export default ({
@@ -26,7 +27,7 @@ export default ({
             >
                 <div className="w-full flex items-center justify-start">
                     {
-                        type === 'discord_server' ? <IoIosApps className="w-5 h-5" /> : type === 'discord_bot' ? <BiBot className="w-5 h-5" /> : type === 'website' ? <BsWindowSidebar className="w-5 h-5" /> : null
+                        type === 'discord_server' ? <IoIosApps className="w-5 h-5" /> : type === 'discord_bot' ? <BiBot className="w-5 h-5" /> : type === 'website' ? <BsWindowSidebar className="w-5 h-5" /> : type === 'package' ? <BiPackage className="w-5 h-5" /> : type === 'repository' ? <FcFolder className="w-5 h-5" /> : null
                     }
                     <h1 className="font-semibold" style={{transform: "translateX(10px)"}}>{name}</h1>
                 </div>
